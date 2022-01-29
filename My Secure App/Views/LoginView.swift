@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @StateObject private var loginVM = LoginViewModel()
+    @EnvironmentObject var authentication: Authentication
     
     var body: some View {
         VStack {
@@ -23,11 +24,13 @@ struct LoginView: View {
             }
             
             Button("Log In") {
-                loginVM.login { success in }
+                loginVM.login { success in
+                    authentication.updateValidation(success: success)
+                }
             }
             .disabled(loginVM.loginDisabled)
             .padding(.bottom, 20)
-            Image("LauchScreen")
+            Image("LaunchScreen")
                 .onTapGesture {
                     UIApplication.shared.endEditing()
                 }
@@ -37,6 +40,9 @@ struct LoginView: View {
         .textFieldStyle(RoundedBorderTextFieldStyle())
         .padding()
         .disabled(loginVM.showProgressView)
+        .alert(item: $loginVM.error) { error in
+            Alert(title: Text("Invalid Login"), message: Text(error.localizedDescription))
+        }
     }
 }
 
