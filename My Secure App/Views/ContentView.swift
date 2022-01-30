@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authentication: Authentication
     var body: some View {
         NavigationView {
             VStack {
@@ -17,6 +18,13 @@ struct ContentView: View {
             }
                 .padding()
                 .navigationTitle("My Secure App")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button("Log Out") {
+                            authentication.updateValidation(success: false)
+                        }
+                    }
+                }
         }
     }
 }
