@@ -10,6 +10,11 @@
 		71448D6D27A5FF9600EEE743 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71448D6C27A5FF9600EEE743 /* LoginViewModel.swift */; };
 		71448D6F27A6010A00EEE743 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71448D6E27A6010A00EEE743 /* LoginView.swift */; };
 		71448D7127A6047F00EEE743 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71448D7027A6047E00EEE743 /* Authentication.swift */; };
+		71448D8827A616CD00EEE743 /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71448D8727A616CD00EEE743 /* Page.swift */; };
+		71448D8A27A616FA00EEE743 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71448D8927A616FA00EEE743 /* UITests.swift */; };
+		71448D8C27A6178200EEE743 /* LogInPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71448D8B27A6178200EEE743 /* LogInPage.swift */; };
+		71448D8E27A618B700EEE743 /* LogInTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71448D8D27A618B700EEE743 /* LogInTestCases.swift */; };
+		71448D9027A625CE00EEE743 /* ContentPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71448D8F27A625CE00EEE743 /* ContentPage.swift */; };
 		BB051FD1266066490015DDB8 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB051FD0266066490015DDB8 /* UIApplication+Extension.swift */; };
 		BB55F82326604807007F939B /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55F82226604807007F939B /* Credentials.swift */; };
 		BB73C2C8265F638C00434BF1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB73C2C7265F638C00434BF1 /* APIService.swift */; };
@@ -19,10 +24,26 @@
 		BB90CEAD265EDA18002BB79E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB90CEAC265EDA18002BB79E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		71448D7C27A614BA00EEE743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB90CE9A265EDA16002BB79E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB90CEA1265EDA16002BB79E;
+			remoteInfo = MySecureApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		71448D6C27A5FF9600EEE743 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		71448D6E27A6010A00EEE743 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		71448D7027A6047E00EEE743 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		71448D7627A614BA00EEE743 /* MySecureAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySecureAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71448D8727A616CD00EEE743 /* Page.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
+		71448D8927A616FA00EEE743 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		71448D8B27A6178200EEE743 /* LogInPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInPage.swift; sourceTree = "<group>"; };
+		71448D8D27A618B700EEE743 /* LogInTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInTestCases.swift; sourceTree = "<group>"; };
+		71448D8F27A625CE00EEE743 /* ContentPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPage.swift; sourceTree = "<group>"; };
 		BB051FD0266066490015DDB8 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		BB55F82226604807007F939B /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		BB73C2C7265F638C00434BF1 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -35,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		71448D7327A614BA00EEE743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB90CE9F265EDA16002BB79E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,6 +73,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71448D7727A614BA00EEE743 /* MySecureAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				71448D8327A6169600EEE743 /* Tests */,
+				71448D8227A6168C00EEE743 /* Pages */,
+				71448D8127A6168100EEE743 /* Support */,
+			);
+			path = MySecureAppUITests;
+			sourceTree = "<group>";
+		};
+		71448D8127A6168100EEE743 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				71448D8727A616CD00EEE743 /* Page.swift */,
+				71448D8927A616FA00EEE743 /* UITests.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		71448D8227A6168C00EEE743 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				71448D8B27A6178200EEE743 /* LogInPage.swift */,
+				71448D8F27A625CE00EEE743 /* ContentPage.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		71448D8327A6169600EEE743 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				71448D8D27A618B700EEE743 /* LogInTestCases.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		BB55F82426605136007F939B /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				BB90CEA4265EDA16002BB79E /* My Secure App */,
+				71448D7727A614BA00EEE743 /* MySecureAppUITests */,
 				BB90CEA3265EDA16002BB79E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				BB90CEA2265EDA16002BB79E /* MySecureApp.app */,
+				71448D7627A614BA00EEE743 /* MySecureAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +180,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		71448D7527A614BA00EEE743 /* MySecureAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71448D8027A614BA00EEE743 /* Build configuration list for PBXNativeTarget "MySecureAppUITests" */;
+			buildPhases = (
+				71448D7227A614BA00EEE743 /* Sources */,
+				71448D7327A614BA00EEE743 /* Frameworks */,
+				71448D7427A614BA00EEE743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71448D7D27A614BA00EEE743 /* PBXTargetDependency */,
+			);
+			name = MySecureAppUITests;
+			productName = MySecureAppUITests;
+			productReference = 71448D7627A614BA00EEE743 /* MySecureAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		BB90CEA1265EDA16002BB79E /* MySecureApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB90CEB1265EDA18002BB79E /* Build configuration list for PBXNativeTarget "MySecureApp" */;
@@ -139,9 +223,14 @@
 		BB90CE9A265EDA16002BB79E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					71448D7527A614BA00EEE743 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+						TestTargetID = BB90CEA1265EDA16002BB79E;
+					};
 					BB90CEA1265EDA16002BB79E = {
 						CreatedOnToolsVersion = 12.5;
 					};
@@ -163,11 +252,19 @@
 			projectRoot = "";
 			targets = (
 				BB90CEA1265EDA16002BB79E /* MySecureApp */,
+				71448D7527A614BA00EEE743 /* MySecureAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		71448D7427A614BA00EEE743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB90CEA0265EDA16002BB79E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,6 +277,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		71448D7227A614BA00EEE743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71448D9027A625CE00EEE743 /* ContentPage.swift in Sources */,
+				71448D8827A616CD00EEE743 /* Page.swift in Sources */,
+				71448D8C27A6178200EEE743 /* LogInPage.swift in Sources */,
+				71448D8A27A616FA00EEE743 /* UITests.swift in Sources */,
+				71448D8E27A618B700EEE743 /* LogInTestCases.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BB90CE9E265EDA16002BB79E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,7 +306,68 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		71448D7D27A614BA00EEE743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB90CEA1265EDA16002BB79E /* MySecureApp */;
+			targetProxy = 71448D7C27A614BA00EEE743 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		71448D7E27A614BA00EEE743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zhane.MySecureAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MySecureApp;
+			};
+			name = Debug;
+		};
+		71448D7F27A614BA00EEE743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = zhane.MySecureAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MySecureApp;
+			};
+			name = Release;
+		};
 		BB90CEAF265EDA18002BB79E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -361,6 +531,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		71448D8027A614BA00EEE743 /* Build configuration list for PBXNativeTarget "MySecureAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71448D7E27A614BA00EEE743 /* Debug */,
+				71448D7F27A614BA00EEE743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BB90CE9D265EDA16002BB79E /* Build configuration list for PBXProject "MySecureApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

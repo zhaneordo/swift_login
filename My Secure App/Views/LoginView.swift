@@ -15,9 +15,12 @@ struct LoginView: View {
         VStack {
             Text("My Secure App")
                 .font(.largeTitle)
+                .accessibilityLabel("LogInPage")
             TextField("Email Address", text: $loginVM.credentials.email)
                 .keyboardType(.emailAddress)
+                .accessibilityLabel("LogInPage.emailAddress")
             SecureField("Password", text: $loginVM.credentials.password)
+                .accessibilityLabel("LogInPage.password")
             
             if loginVM.showProgressView {
                 ProgressView()
@@ -30,6 +33,8 @@ struct LoginView: View {
             }
             .disabled(loginVM.loginDisabled)
             .padding(.bottom, 20)
+            .accessibilityLabel("LogInPage.logIn")
+            
             Image("LaunchScreen")
                 .onTapGesture {
                     UIApplication.shared.endEditing()
