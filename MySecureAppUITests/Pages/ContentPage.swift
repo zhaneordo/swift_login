@@ -12,6 +12,7 @@ struct ContentPage: Page {
     
     enum Identifier: String {
         case contentPage = "ContentPage"
+        case logOut = "ContentPage.logOut"
     }
     
     func verify() -> Self {
